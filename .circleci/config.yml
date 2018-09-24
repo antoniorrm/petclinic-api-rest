@@ -177,6 +177,6 @@ workflows:
       - deploy-heroku:
           requires:
             - build
-      - deploy-cf:
-          requires:
-            - build
+#       - deploy-cf:
+#           requires:
+#             - build
