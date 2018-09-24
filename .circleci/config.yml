@@ -77,7 +77,7 @@ jobs:
       - run:
           name: Copy deployment artifacts to workspace
           command: |
-            cp target/circleci-challenge-*.jar /tmp/standalone-app.jar
+            cp target/spring-petclinic-*.jar /tmp/standalone-app.jar
             cp .circleci/setup-heroku.sh /tmp/setup-heroku.sh
             cp src/main/resources/deployment/cf-dev-manifest.yml /tmp/
       - store_test_results:
@@ -115,7 +115,7 @@ jobs:
             ls -la
             heroku plugins:install heroku-cli-deploy
             heroku plugins:install heroku-cli-deploy  # when debugging on circle image, first run succeeded, but did not make plugin available
-            heroku deploy:jar standalone-app.jar --app $HEROKU_APP_NAME
+            heroku deploy:jar standalone-app.jar --app spring-api-pet
       - run:
           name: Smoke Test
           command: |
