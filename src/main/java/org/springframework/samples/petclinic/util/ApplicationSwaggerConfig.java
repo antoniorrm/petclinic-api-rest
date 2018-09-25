@@ -58,7 +58,8 @@ public class ApplicationSwaggerConfig {
 		"1.0",
 		"Petclinic backend terms of service",
 		new Contact(
-				"Vitaliy Fedoriv",
+// 				"Vitaliy Fedoriv",
+                "Antonio Raimundo",
 				"https://github.com/spring-petclinic/spring-petclinic-rest",
 				"vitaliy.fedoriv@gmail.com"),
 		"Apache 2.0",
