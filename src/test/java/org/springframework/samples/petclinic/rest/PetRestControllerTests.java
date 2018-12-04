@@ -151,7 +151,8 @@ public class PetRestControllerTests {
     	given(this.clinicService.findAllPets()).willReturn(pets);
         this.mockMvc.perform(get("/api/pets/")
         	.accept(MediaType.APPLICATION_JSON))
-            .andExpect(status().isNotFound());
+            .andExpect(status().isOk());
+			//esse
     }
 
     @Test
